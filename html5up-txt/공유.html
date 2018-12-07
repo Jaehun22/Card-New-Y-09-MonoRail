@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Monorail</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<title>Your Website Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<meta property="og:url" content="https://raw.githubusercontent.com/Jaehun22/Card-New-Y-09-monorail-/master/html5up-txt/images/pic02.jpg" />
 	</head>
 
 	<body class="is-preload">
@@ -33,17 +34,9 @@
 						<li>
 							<a href="#">공유</a>
 							<ul>
-								<li><a href="#">카드뉴스</a></li>
-								<li><a href="#">영상</a></li>
-								<li>
-									<a href="#">홍보</a>
-									<ul>
-										<li><a href="#">종류1</a></li>
-										<li><a href="#">종류2</a></li>
-										<li><a href="#">종류3</a></li>
-										<li><a href="#">종류4</a></li>
-									</ul>
-								</li>
+								<li><button type="button" onclick="scrolling('.scroll1')">카드뉴스</button></li>
+								<li><button type="button" onclick="scrolling('.scroll2')">배너</button></li>
+								<li><button type="button" onclick="scrolling('.scroll3)">홍보</button></li>
 								<li><a href="#">그 외</a></li>
 							</ul>
 						<li><a href="라이선스.html">라이선스</a></li>
@@ -55,17 +48,26 @@
 				<section id="main">
 					<div class="container">
 						<div class="row gtr-200">
-								<section>
-										<p>
-											This is <strong>TXT</strong>, yet another free responsive site template designed by
-											<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net">HTML5 UP</a>. It's released under the
-											<a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for
-											whatever you're working on (personal or commercial), just be sure to give us credit for the design.
-											That's basically it :)
-										</p>
-									
-								</section>
-						
+							<ul class = "list">
+								<li class="scroll1">
+									<span class = "image">
+										<div class="w3-display-container">
+											<img src="https://raw.githubusercontent.com/Jaehun22/Card-New-Y-09-monorail-/master/html5up-txt/images/pic02.jpg" alt="Avatar">
+											<div class="w3-display-middle w3-display-hover">
+													<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fraw.githubusercontent.com%2FJaehun22%2FCard-New-Y-09-monorail-%2Fmaster%2Fhtml5up-txt%2Fimages%2Fpic02.jpg&layout=button&size=large&mobile_iframe=true&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>	
+													
+													<a class="twitter-share-button" href="https://twitter.com/intent/tweet"
+													data-size="large"
+													data-text="Monorail share"
+													data-url="https://raw.githubusercontent.com/Jaehun22/Card-New-Y-09-monorail-/master/html5up-txt/images/pic02.jpg"
+													data-hashtags="Monorail"
+													data-via="Monorail"
+													data-related="twitterapi,twitter">Tweet</a>
+											</div>
+										</div>
+									</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
@@ -123,10 +125,11 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.scrolling.js"></script>
+			<script src="assets/js/widgets.js"></script>
 
 	</body>
 </html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.devrama.slider.js"></script>
+    </head>
+    <body>
+        <!--
+        data-lazy-src: image url
+        data-lazy-background: slide background url
+        -->
+        <div id="my-slide">
+            <!-- First Slide --------------------------------------------->
+            <div style="background-color:#27446F;">
+                <h3>HTML content inside</h3>
+                <table>
+                    <thead>
+                        <th colspan="2">HTML tags in your slide.</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table content 1</td>
+                            <td>Table content 2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Second Slide --------------------------------------------->
+            <div data-lazy-background="https://devrama.com/static/devrama-slider/images/4247776023_81a3f048ca_b.png">
+                <h3>HTML content inside</h3>
+                <img src="https://www.gravatar.com/avatar/fe3f1273001cb2e9ed9c9b067fcb1fd4?s=200"/>
+            </div>
+        </div>
+    </body>
+</html>
+ 
+    
+?
+<script type="text/javascript">
+ 
+    $(document).ready(function(){
+        $('#my-slide').DrSlider({
+            width: 1024, //slide width
+            height: 400  //slide height
+        }); //Yes! that's it!
+    });
+</script>
